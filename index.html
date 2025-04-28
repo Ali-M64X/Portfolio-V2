@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>علي ماهر | Ali Maher - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo/weka-logo.png" alt="Weka Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link" data-lang-key="nav_home">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link" data-lang-key="nav_about">نبذة عني</a></li>
+                    <li><a href="#skills" class="nav-link" data-lang-key="nav_skills">المهارات</a></li>
+                    <li><a href="#experience" class="nav-link" data-lang-key="nav_experience">الخبرات</a></li>
+                    <li><a href="#projects" class="nav-link" data-lang-key="nav_projects">المشاريع</a></li>
+                    <li><a href="#youtube" class="nav-link" data-lang-key="nav_youtube">قناة اليوتيوب</a></li>
+                    <li><a href="#contact" class="nav-link" data-lang-key="nav_contact">تواصل معي</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="lang-toggle" class="lang-btn">EN</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-text">
+                    <span class="greeting" data-lang-key="hero_greeting">مرحباً، أنا</span>
+                    <span class="name">علي ماهر</span>
+                </h1>
+                <p class="profession" data-lang-key="hero_profession">مطور ويب ومنشئ محتوى</p>
+                <p class="hero-description" data-lang-key="hero_description">أوثق رحلتي في تطوير مهاراتي وأشارك خبراتي مع الآخرين</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary-btn" data-lang-key="hero_contact_btn">تواصل معي</a>
+                    <a href="#" class="btn secondary-btn cv-download" data-lang-key="hero_cv_btn">تحميل السيرة الذاتية</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/profile.jpg" alt="Ali Maher">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="about_title">نبذة عني</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-lang-key="about_p1">مرحباً! أنا علي ماهر، شغوف بتطوير الويب وإنشاء المحتوى. أسعى دائماً لتطوير مهاراتي وتوثيق رحلتي لمساعدة الآخرين.</p>
+                    <p data-lang-key="about_p2">لدي خبرة متنوعة تشمل العمل في مركز اتصال، والتسويق بالعمولة عبر الإنترنت، وإدارة مطعم للمأكولات الشرقية. هذه التجارب أكسبتني مهارات قيمة في التواصل، وخدمة العملاء، والإدارة.</p>
+                    <p data-lang-key="about_p3">أنا مهتم بشكل خاص بالطبخ والمشويات، وأستمتع بمشاركة معرفتي في هذا المجال. أؤمن بأن التعلم المستمر هو مفتاح النجاح، وأسعى دائماً لاكتساب مهارات جديدة.</p>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="info-label" data-lang-key="about_name">الاسم:</span>
+                        <span class="info-value">علي ماهر</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label" data-lang-key="about_email">البريد الإلكتروني:</span>
+                        <span class="info-value">example@email.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label" data-lang-key="about_phone">الهاتف:</span>
+                        <span class="info-value">+20 123 456 7890</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label" data-lang-key="about_location">الموقع:</span>
+                        <span class="info-value" data-lang-key="about_location_value">مصر</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="skills_title">المهارات</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 data-lang-key="skills_technical">المهارات التقنية</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Responsive Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 data-lang-key="skills_soft">المهارات الشخصية</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name" data-lang-key="skill_customer_service">خدمة العملاء</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-lang-key="skill_communication">التواصل</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-lang-key="skill_management">الإدارة</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-lang-key="skill_cooking">الطبخ والمشويات</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="experience_title">الخبرات</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-lang-key="exp1_title">مدير مطعم</h3>
+                        <div class="timeline-date" data-lang-key="exp1_date">2020 - 2022</div>
+                        <p data-lang-key="exp1_desc">إدارة مطعم للكبدة والكفتة والمشويات. كنت مسؤولاً عن جميع جوانب التشغيل، بما في ذلك إدارة الموظفين، وخدمة العملاء، وإعداد الطعام، والمشتريات.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-lang-key="exp2_title">مسوق بالعمولة</h3>
+                        <div class="timeline-date" data-lang-key="exp2_date">2018 - 2020</div>
+                        <p data-lang-key="exp2_desc">عملت في التسويق بالعمولة عبر الإنترنت لفترة طويلة، حيث قمت بالترويج لمنتجات مختلفة وتحقيق مبيعات من خلال استراتيجيات تسويقية متنوعة.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-lang-key="exp3_title">موظف مركز اتصال</h3>
+                        <div class="timeline-date" data-lang-key="exp3_date">2017 - 2018</div>
+                        <p data-lang-key="exp3_desc">عملت في مركز اتصال لمطعم، حيث كنت مسؤولاً عن استقبال طلبات العملاء، والرد على استفساراتهم، وحل المشكلات التي قد تواجههم.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="projects_title">المشاريع</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="Portfolio Website">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-lang-key="project1_title">موقع البورتفوليو الشخصي</h3>
+                        <p data-lang-key="project1_desc">موقع بورتفوليو شخصي تم تطويره باستخدام HTML و CSS و JavaScript، مع دعم للغتين العربية والإنجليزية.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-link"></i> <span data-lang-key="project_live">معاينة</span></a>
+                            <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> <span data-lang-key="project_code">الكود</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="YouTube Channel">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-lang-key="project2_title">قناة ويكا على يوتيوب</h3>
+                        <p data-lang-key="project2_desc">قناة يوتيوب لمشاركة رحلتي في تطوير المهارات وتقديم محتوى تعليمي متنوع.</p>
+                        <div class="project-tags">
+                            <span>YouTube</span>
+                            <span>Content Creation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-youtube"></i> <span data-lang-key="project_channel">زيارة القناة</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Channel Section -->
+    <section id="youtube" class="youtube-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="youtube_title">قناة ويكا على يوتيوب</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="youtube-content">
+                <div class="youtube-info">
+                    <div class="youtube-logo">
+                        <img src="assets/logo/weka-logo.png" alt="Weka Logo">
+                    </div>
+                    <h3>ويكا - Weka</h3>
+                    <p data-lang-key="youtube_desc">قناة مخصصة لتوثيق رحلتي في تطوير المهارات ومشاركة خبراتي في مجالات متنوعة مثل البرمجة، والطبخ، والإدارة، والتسويق.</p>
+                    <a href="#" target="_blank" class="btn primary-btn youtube-btn"><i class="fab fa-youtube"></i> <span data-lang-key="youtube_subscribe">اشترك في القناة</span></a>
+                </div>
+                <div class="youtube-featured">
+                    <div class="featured-video">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <span data-lang-key="youtube_featured">الفيديو المميز</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="contact_title">تواصل معي</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h3 data-lang-key="contact_email">البريد الإلكتروني</h3>
+                            <p>example@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-details">
+                            <h3 data-lang-key="contact_phone">الهاتف</h3>
+                            <p>+20 123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h3 data-lang-key="contact_location">الموقع</h3>
+                            <p data-lang-key="contact_location_value">مصر</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name" data-lang-key="contact_name">الاسم</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" data-lang-key="contact_email_address">البريد الإلكتروني</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject" data-lang-key="contact_subject">الموضوع</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message" data-lang-key="contact_message">الرسالة</label>
+                        </div>
+                        <button type="submit" class="btn primary-btn" data-lang-key="contact_send">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Download Modal -->
+    <div id="cvModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 data-lang-key="cv_download_title">تحميل السيرة الذاتية</h2>
+            <p data-lang-key="cv_download_desc">اختر اللغة المفضلة لتحميل السيرة الذاتية:</p>
+            <div class="cv-options">
+                <a href="assets/cv/cv-ar.pdf" download class="btn primary-btn" data-lang-key="cv_arabic">السيرة الذاتية بالعربية</a>
+                <a href="assets/cv/cv-en.pdf" download class="btn secondary-btn" data-lang-key="cv_english">السيرة الذاتية بالإنجليزية</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo/weka-logo.png" alt="Weka Logo">
+                    <p>ويكا - Weka</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home" data-lang-key="nav_home">الرئيسية</a></li>
+                        <li><a href="#about" data-lang-key="nav_about">نبذة عني</a></li>
+                        <li><a href="#skills" data-lang-key="nav_skills">المهارات</a></li>
+                        <li><a href="#experience" data-lang-key="nav_experience">الخبرات</a></li>
+                        <li><a href="#projects" data-lang-key="nav_projects">المشاريع</a></li>
+                        <li><a href="#youtube" data-lang-key="nav_youtube">قناة اليوتيوب</a></li>
+                        <li><a href="#contact" data-lang-key="nav_contact">تواصل معي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> <span data-lang-key="footer_rights">جميع الحقوق محفوظة</span> | <span data-lang-key="footer_made">تم التطوير بواسطة</span> <a href="#">علي ماهر</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+/* Responsive Styles */
+
+/* Large Screens (Desktops) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-content .profession {
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    html[lang="en"] .hero-content,
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-content .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .about-content,
+    .contact-content,
+    .youtube-content {
+        flex-direction: column;
+    }
+    
+    .about-info,
+    .contact-info {
+        width: 100%;
+    }
+    
+    .youtube-info {
+        margin-bottom: 40px;
+    }
+    
+    .timeline::after {
+        left: 31px;
+    }
+    
+    html[dir="rtl"] .timeline::after {
+        right: 31px;
+        left: auto;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    html[dir="rtl"] .timeline-item {
+        padding-right: 70px;
+        padding-left: 25px;
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        left: 0;
+        text-align: left;
+    }
+    
+    html[dir="rtl"] .timeline-item:nth-child(odd),
+    html[dir="rtl"] .timeline-item:nth-child(even) {
+        left: 0;
+        text-align: right;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: 15px;
+    }
+    
+    html[dir="rtl"] .timeline-item:nth-child(odd) .timeline-dot,
+    html[dir="rtl"] .timeline-item:nth-child(even) .timeline-dot {
+        right: 15px;
+        left: auto;
+    }
+}
+
+/* Small Screens (Mobile Landscape) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    header .container {
+        height: 60px;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: var(--light-bg-color);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+    
+    html[dir="rtl"] .nav-links {
+        left: auto;
+        right: -100%;
+        transition: right 0.3s ease;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    html[dir="rtl"] .nav-links.active {
+        right: 0;
+        left: auto;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .mobile-menu-btn.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .mobile-menu-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-btn.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content .profession {
+        font-size: 1.3rem;
+    }
+    
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-content {
+        width: 90%;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-links ul li {
+        margin: 0 10px 10px 10px;
+    }
+}
+
+/* Extra Small Screens (Mobile Portrait) */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content .profession {
+        font-size: 1.1rem;
+    }
+    
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .hero-buttons .btn {
+        margin: 5px;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .skills-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .cv-options {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cv-options .btn {
+        margin: 5px 0;
+    }
+}
