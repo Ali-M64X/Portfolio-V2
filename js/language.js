@@ -14,6 +14,7 @@ const translations = {
         
         // Hero Section
         hero_greeting: "مرحباً، أنا",
+        user_name: "علي ماهر", // Added user name translation
         hero_profession: "مطور ويب ومنشئ محتوى",
         hero_description: "أوثق رحلتي في تطوير مهاراتي وأشارك خبراتي مع الآخرين",
         hero_contact_btn: "تواصل معي",
@@ -101,6 +102,7 @@ const translations = {
         
         // Hero Section
         hero_greeting: "Hello, I'm",
+        user_name: "Ali Maher", // Added user name translation
         hero_profession: "Web Developer & Content Creator",
         hero_description: "I document my journey in skill development and share my experiences with others",
         hero_contact_btn: "Contact Me",

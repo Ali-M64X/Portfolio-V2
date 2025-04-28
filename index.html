@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/mobile-fixes.css"> <!-- Added mobile fixes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="assets/logo/favicon.png">
 </head>
@@ -16,7 +17,7 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="assets/logo/weka-logo.png" alt="Weka Logo">
+                    <img src="assets/logo/weka_logo_small.png" alt="Weka Logo">
                 </a>
             </div>
             <nav>
@@ -47,7 +48,7 @@
             <div class="hero-content">
                 <h1 class="animate-text">
                     <span class="greeting" data-lang-key="hero_greeting">مرحباً، أنا</span>
-                    <span class="name">علي ماهر</span>
+                    <span class="name" data-lang-key="user_name">علي ماهر</span>
                 </h1>
                 <p class="profession" data-lang-key="hero_profession">مطور ويب ومنشئ محتوى</p>
                 <p class="hero-description" data-lang-key="hero_description">أوثق رحلتي في تطوير مهاراتي وأشارك خبراتي مع الآخرين</p>
@@ -57,7 +58,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/images/profile.jpg" alt="Ali Maher">
+                <img src="assets/logo/weka_logo_small.png" alt="Weka Channel Logo">
             </div>
         </div>
     </section>
@@ -78,7 +79,7 @@
                 <div class="about-info">
                     <div class="info-item">
                         <span class="info-label" data-lang-key="about_name">الاسم:</span>
-                        <span class="info-value">علي ماهر</span>
+                        <span class="info-value" data-lang-key="user_name">علي ماهر</span>
                     </div>
                     <div class="info-item">
                         <span class="info-label" data-lang-key="about_email">البريد الإلكتروني:</span>
@@ -393,6 +394,33 @@
     <!-- Scripts -->
     <script src="js/main.js"></script>
     <script src="js/language.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+
+
+    <!-- CV Download Modal -->
+    <div id="cvModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 data-lang-key="cv_download_title">تحميل السيرة الذاتية</h3>
+            <p data-lang-key="cv_download_desc">اختر اللغة المفضلة لتحميل السيرة الذاتية:</p>
+            <div class="modal-buttons">
+                <a href="assets/cv/cv_ar.pdf" download="Ali_Maher_CV_AR.pdf" class="btn primary-btn" data-lang-key="cv_arabic">السيرة الذاتية بالعربية</a>
+                <a href="assets/cv/cv_en.pdf" download="Ali_Maher_CV_EN.pdf" class="btn secondary-btn" data-lang-key="cv_english">السيرة الذاتية بالإنجليزية</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> <span data-lang-key="footer_rights">جميع الحقوق محفوظة</span> | <span data-lang-key="footer_made">تم التطوير بواسطة</span> علي ماهر</p>
+        </div>
+    </footer>
+
+    <script src="js/language.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
 </body>
 </html>

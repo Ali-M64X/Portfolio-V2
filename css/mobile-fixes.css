@@ -1,0 +1,75 @@
+/* Fix for white mark issue in mobile navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
+        backdrop-filter: blur(10px); /* Add blur effect */
+        width: 80%; /* Reduce width to avoid full screen coverage */
+        max-width: 300px; /* Maximum width */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        left: -100%; /* Start off-screen */
+    }
+    
+    html[dir="rtl"] .nav-links {
+        right: -100%;
+        left: auto;
+    }
+    
+    /* Ensure content is not hidden behind fixed header */
+    body {
+        padding-top: 60px; /* Match header height */
+    }
+    
+    /* Fix for hero section on mobile */
+    .hero-section {
+        height: auto;
+        min-height: calc(100vh - 60px);
+        padding: 40px 0;
+    }
+    
+    /* Improve mobile menu button visibility */
+    .mobile-menu-btn {
+        z-index: 1001;
+        position: relative;
+    }
+    
+    /* Fix for overflow issues */
+    .container {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* Ensure images don't cause horizontal overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Additional fixes for extra small screens */
+@media (max-width: 576px) {
+    /* Improve spacing and readability */
+    section {
+        padding: 50px 0;
+    }
+    
+    /* Fix for timeline on small screens */
+    .timeline-item {
+        padding-left: 60px;
+        padding-right: 15px;
+    }
+    
+    html[dir="rtl"] .timeline-item {
+        padding-right: 60px;
+        padding-left: 15px;
+    }
+    
+    /* Ensure YouTube section is properly displayed */
+    .youtube-content {
+        gap: 30px;
+    }
+    
+    /* Fix contact form on small screens */
+    .contact-form {
+        padding: 20px;
+    }
+}
